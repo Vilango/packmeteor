@@ -28,6 +28,7 @@ document.addEventListener("deviceready", function() {
 // This package will stop Migration
 if (typeof Reload !== 'undefined') {
   Reload._onMigrate('Packmeteor', function() {
+    console.log("Packmeteor","Nope we will not allow reload");
     // Nope we will not allow reload
     return false;
   });
