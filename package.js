@@ -3,6 +3,8 @@ Package.describe({
   version: '0.1.9',
   summary: "Rig the basics for packmeteor",
   git: 'https://github.com/Vilango/packmeteor'
+  documentation: 'README.md'
+
 });
 
 Package.onUse(function (api) {
