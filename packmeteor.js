@@ -48,7 +48,7 @@ var scriptPath = path.dirname(require.main.filename);
 var templatePath = path.join(scriptPath, path.sep, 'templates');
 
 program
-  .version('0.1.4')
+  .version('0.1.9')
   .option('-c, --create <name>', 'Create Packaged App')
   .option('-a, --autobuild', 'Auto build on server update')
   .option('-r, --reload', 'Reload app')
@@ -74,6 +74,7 @@ if (program.device === true) {
 
 // Check that we are in a packaged app directory
 var inPackagedAppFolder = fs.existsSync('manifest.json');
+var inNodeWebkitAppFolder = fs.existsSync('package.json');
 var inCordovaAppFolder = fs.existsSync('config.xml');
 var inNewCordovaOutSideWWW = fs.existsSync('www');
 
@@ -416,7 +417,7 @@ if (program.create) {
   console.log('Connect client app to : ' + urls.server.href);
   console.log('-------------------------------------------');
 
-  if (inPackagedAppFolder || inCordovaAppFolder) {
+  if (inPackagedAppFolder || inCordovaAppFolder || inNodeWebkitAppFolder) {
 
     if (program.reload) {
       if (program.target === 'packaged') {
