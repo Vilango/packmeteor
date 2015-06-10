@@ -9,6 +9,11 @@ DEPRECATION NOTE: For Cordova, Meteor Core is developing cordova integration [ch
 
 [Quick demo of packmeteor](http://www.youtube.com/watch?v=7UFIqetFC-k&feature=youtu.be)
 
+## Newest Functions
+Create nwjs apps now
+
+
+
 ###Installation:
 ```
 $ npm install -g git+https://git@github.com/Vilango/packmeteor
