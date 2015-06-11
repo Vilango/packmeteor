@@ -48,7 +48,7 @@ var scriptPath = path.dirname(require.main.filename);
 var templatePath = path.join(scriptPath, path.sep, 'templates');
 
 program
-  .version('0.1.9')
+  .version('0.1.10')
   .option('-c, --create <name>', 'Create Packaged App')
   .option('-a, --autobuild', 'Auto build on server update')
   .option('-r, --reload', 'Reload app')

@@ -1,6 +1,6 @@
 {
   "name": "packmeteor",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "preferGlobal": "true",
   "description": "Package the Meteor js client into a Chrome Packaged App or Cordova/PhoneGap",
   "keywords": [

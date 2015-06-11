@@ -1,6 +1,6 @@
 Package.describe({
   name: 'gbrunner:packmeteor',
-  version: '0.1.9',
+  version: '0.1.10',
   summary: "Rig the basics for packmeteor",
   git: 'https://github.com/Vilango/packmeteor'
 });
