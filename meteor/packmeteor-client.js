@@ -35,10 +35,10 @@ if (typeof Reload !== 'undefined') {
     if (typeof process !== 'undefined'){
       // Nope we will not allow reload
       console.log("Packmeteor","We will NOT allow reload");
-      return false;
+      return [false];
     } else {
       console.log("Packmeteor","We allow reload");
-      return true;  
+      return [true];  
     }
     
   });
